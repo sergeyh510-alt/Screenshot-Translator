@@ -1,0 +1,7 @@
+requests>=2.31.0
+Pillow>=10.0.0
+python-docx>=1.1.0
+
+# Linux: tkinter is usually installed via the OS package manager
+# Ubuntu/Debian: sudo apt install python3-tk
+
