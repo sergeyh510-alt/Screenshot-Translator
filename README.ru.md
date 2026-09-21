@@ -17,6 +17,11 @@
 ![лицензия](https://img.shields.io/badge/license-MIT-green)
 ![статус](https://img.shields.io/badge/status-active-brightgreen)
 
+
+[![Python](https://img.shields.io/badge/python-3.10%2B-blue)](https://www.python.org/)
+[![License](https://img.shields.io/badge/license-MIT-green)](#license)
+
+
 </div>
 
 
