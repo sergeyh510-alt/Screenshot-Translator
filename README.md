@@ -28,15 +28,15 @@
 
 # Screenshot Translator — AI Vision → Word
 
-A Python desktop application that captures a selected area of the screen, sends an image to the vision model via an API compatible with OpenAI, and saves the result to a Word document. It is designed for situations where text in English or some other language is displayed inside an image, presentation, document, remote desktop, or web interface.
+A Python desktop application that captures a selected screen region, sends the image to a vision model through an OpenAI-compatible API, and saves the result to a Word document. It is designed for situations where text in any supported language appears inside an image, presentation, document, remote desktop, or web interface.
 
 ## Purpose
 
-The application reduces the manual workflow of taking a screenshot, recognizing text, translating it, and formatting the result. The user selects a screen region once and can capture it repeatedly. The vision model receives a PNG image and is instructed to return:
+The application reduces the manual workflow of taking a screenshot, recognizing text, translating it, and formatting the result. The user selects a screen region once and can capture it repeatedly. The vision model receives a PNG image and is instructed to return the source text and its translation. The source and target languages are defined by the configured prompt:
 
 ```text
-EN: <original sentence in English>
-RU: <exact Russian translation>
+SOURCE: <recognized text in the source language>
+TARGET: <translation in the target language>
 ```
 
 The response and the source image are saved to a `.docx` file. The user can append results to one cumulative document or create a separate document for each screenshot.
@@ -61,7 +61,7 @@ flowchart LR
     R --> G[ImageGrab: PNG capture]
     G --> E[Base64 encoding]
     E --> API[Vision API\nOpenAI-compatible endpoint]
-    API --> P[EN/RU response]
+    API --> P[SOURCE/TARGET response]
     P --> D[python-docx]
     G --> D
     D --> W[.docx output]
@@ -152,7 +152,7 @@ The application checks that a capture region, API key, and model name exist befo
 
 Do not send confidential screenshots to an external API when organizational policy prohibits it. The image is transmitted to the provider as Base64 data inside a JSON request. The application does not currently provide personal-data masking, request auditing, retries, or encryption for the local XML settings file. These capabilities should be added before use in regulated or corporate environments.
 
-Accuracy depends on image quality, language, and the selected vision model. The default prompt requests an `EN/RU` format, but the application does not independently validate the model response.
+Accuracy depends on image quality, language, and the selected vision model. The default prompt requests a `SOURCE/TARGET` format, but the application does not independently validate the model response.
 
 ## Repository layout
 
@@ -204,6 +204,7 @@ No license was specified in the supplied source material. Add a `LICENSE` file b
 [5]: https://platform.openai.com/docs/api-reference/chat "OpenAI-compatible chat completions API reference"
 
 The project relies on Python Tkinter [1], `python-docx` [2], Requests [3], and Mermaid diagrams [4]. Its request shape follows an interface compatible with the Chat Completions API [5].
+
 
 
 ### Contacts
