@@ -204,3 +204,10 @@ No license was specified in the supplied source material. Add a `LICENSE` file b
 [5]: https://platform.openai.com/docs/api-reference/chat "OpenAI-compatible chat completions API reference"
 
 The project relies on Python Tkinter [1], `python-docx` [2], Requests [3], and Mermaid diagrams [4]. Its request shape follows an interface compatible with the Chat Completions API [5].
+
+
+### Contacts
+* Email: sergeyh510@gmail.com
+* GitHub: sergeyh510-alt
+* LinkedIn: www.linkedin.com/in/sergey-chekryzhov-a38778217
+* Telegram: @SergeyChekryzhov
