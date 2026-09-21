@@ -1,6 +1,6 @@
 <div align="center">
 
-# ⚡ Screenshot Translator — AI Vision
+# Screenshot Translator — AI Vision
 
 <div align="center">
   <a href="./README.md">
