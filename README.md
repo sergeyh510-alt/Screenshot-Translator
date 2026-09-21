@@ -1,3 +1,25 @@
+<div align="center">
+
+# ⚡ Screenshot Translator — AI Vision
+
+<div align="center">
+  <a href="./README.md">
+    <img src="https://img.shields.io/badge/🇬🇧_English-README-blue?style=for-the-badge&logo=markdown&logoColor=white" alt="English">
+  </a>
+  <a href="./README.ru.md">
+    <img src="https://img.shields.io/badge/🇷🇺_Русский-README-red?style=for-the-badge&logo=markdown&logoColor=white" alt="Русский">
+  </a>
+</div>
+
+<br><br>
+
+![версия](https://img.shields.io/badge/version-1.0.0-blue)
+![лицензия](https://img.shields.io/badge/license-MIT-green)
+![статус](https://img.shields.io/badge/status-active-brightgreen)
+
+</div>
+
+
 # Screenshot Translator — AI Vision → Word
 
 A Python desktop application that captures a selected screen region, sends the image to a vision model through an OpenAI-compatible API, and saves the result to a Word document. It is designed for situations where English text appears inside an image, presentation, document, remote desktop, or web interface.
