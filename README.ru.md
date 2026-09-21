@@ -207,3 +207,9 @@ git push -u origin main
 [5]: https://platform.openai.com/docs/api-reference/chat "OpenAI-compatible chat completions API reference"
 
 Инструменты, использованные проектом, описаны в документации Python Tkinter [1], `python-docx` [2], Requests [3] и Mermaid [4]. Формат запроса ориентирован на совместимый с Chat Completions API интерфейс [5].
+
+### Контакты
+* Email: sergeyh510@gmail.com
+* GitHub: sergeyh510-alt
+* LinkedIn: www.linkedin.com/in/sergey-chekryzhov-a38778217
+* Telegram: @SergeyChekryzhov
