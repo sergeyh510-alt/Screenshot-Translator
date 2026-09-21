@@ -20,6 +20,8 @@
 </div>
 
 
+---
+
 # Screenshot Translator — AI Vision → Word
 
 A Python desktop application that captures a selected screen region, sends the image to a vision model through an OpenAI-compatible API, and saves the result to a Word document. It is designed for situations where English text appears inside an image, presentation, document, remote desktop, or web interface.
